@@ -26,12 +26,18 @@ def fibonacci_recursive_approach(n):
     if n < 0:
         ValueError("Input 0 or greater only")
     if n<= 1:
+        #every time a recursive function call pops out of the stack we know!
         print("Pop!")
         return n
+
+    #look at how the function moves through the different stages, you can draw the decision tree
+    #and see how the function calculates the left hand side of the tree first
     print("now recursing with fibonnaci({}) & fibonacci({})".format(n-1,n-2))
     return fibonacci_recursive_approach(n-1) + fibonacci_recursive_approach(n-2)
 
 print(fibonacci_recursive_approach(3))
 print(fibonacci_recursive_approach(7))
 print(fibonacci_recursive_approach(0))
-print(fibonacci_recursive_approach(0))
+print(fibonacci_recursive_approach(15))
+#if you want your computer to crash like mine did then uncomment the next line!
+#print(fibonacci_recursive_approach(100))
