@@ -5,11 +5,11 @@ def find_min_iterative(my_list):
             min = element
     return min
 
-#print(find_min_iterative([42, 17, 2, -1, 67]))
+print(find_min_iterative([42, 17, 2, -1, 67]))
 # -1
-#print(find_min_iterative([]))
+#rint(find_min_iterative([]))
 # None
-#print(find_min_iterative([13, 72, 19, 5, 86]))
+print(find_min_iterative([13, 72, 19, 5, 86]))
 # 5
 
 def find_min_recursive(my_list, min=None):
